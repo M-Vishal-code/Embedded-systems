@@ -1,0 +1,127 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int main() {
+  /* char book[20]="awsome";
+   printf("%c\n",book[2]);
+   //strlen
+   printf("%d\n",strlen(book));
+   
+   //strcpy
+   char note[30]="classmate";
+   printf("before copy:%s\n",note);
+   strcpy(note,book);
+   printf("after copy:%s\n",note);
+   
+   //strcat
+   char str2[40]="elegible";
+   char str3[40]="elegible";
+   printf("%s\n",strcat(book,str2));
+   
+   //strcmp
+   if(strcmp(str2,str3)==0){
+       printf("equal\n");
+   }else if(strcmp(note,str2)!=0){
+   printf("not equal");
+   }else{
+       printf("waste");
+   }
+   
+   //toupper
+   char str[30]="vishal";
+   for(int i=0;str[i]!='\0';i++){
+       str[i]=toupper(str[i]);
+   }printf("%s\n",str);
+   
+   //tolower
+   char str4[30]="PARTHA";
+   for(int i=0;str4[i]!='\0';i++){
+       str4[i]=tolower(str4[i]);
+   }printf("%s\n",str4);
+   
+   //multiplication table
+   int num,i;
+    
+   printf("enter number here:");
+   scanf("%d",&num);
+   
+   printf("multiplication table of: %d\n,num");
+   for(i=0;i<=10;i++){
+       printf("%d * %d =%d\n",num,i,num*i);
+}*/
+  
+   //break
+   /*int i;
+   for(i=1;i<=50;i++)
+   {
+       if(i==25)
+       break;
+       printf("%d\n",i);
+       }*/
+   
+   //continue
+  /*int a;
+   for(a=1;a<20;a++)
+   {
+       if(a%3==0)
+       continue;
+       printf("%d\n",a);
+       }*/
+       
+    //10
+    int i;
+    printf("Enter a number :%d\n",i);
+    scanf("%d",&i);
+    
+    if(i>0){
+        printf("positve");
+    }else{
+    printf("invalid");
+    }
+    
+  return 0;
+
+}
+
+#include <stdio.h>
+
+int main()
+//sum of divisors
+/*{
+   int num,i,sum =0;
+   
+   printf("enter the number:");
+   scanf("%d",&num);
+   
+   for(i=1;i<=num;i++){
+       if(num%i==0){
+           sum=sum+i;
+       }
+   }
+   printf("the sum of divisors=%d\n",sum);*/
+   
+   //find the occurance of in a string
+   {
+   int a=0,count=0;
+   char str[30],ch;
+   
+   printf("enter a word:");
+   scanf("%s",str);
+   
+   printf("enter a chartr to search:");
+   scanf("%c",&ch);
+   
+   while(str[a]!='\0'){
+       if(str[a]==ch){
+           count++;
+       }
+       a++;
+   }
+   
+  printf("no of '%c' present =%d\n",ch,count);
+  
+  // 
+   
+   return 0;
+}
