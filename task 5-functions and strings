@@ -1,0 +1,91 @@
+#include <stdio.h>
+#include<string.h>
+#include<ctype.h>
+#include<math.h>
+//int main() {
+    
+  /*  // find the length of the string
+    char str[30]="function";
+    //printf("length= %d",strlen(str));
+    
+    //find the cpy of two strings
+    char str2[30]="partha";
+    strcpy(str,str2);
+    
+    printf("original string: %s\n",str);
+    printf("copied string: %s\n",str2);
+    
+    //string compare
+    int result;
+     char str[30]="function";
+     char str2[30]="partha";
+     
+     result=strcmp(str,str2);
+     
+     if(result==0){
+         printf("both are equal");
+     }else if(result>0){
+          printf("result is greater");
+     }else{
+         printf("result is smaller");
+     }*/
+     
+     //recursion staircas problem
+    /* int ways(int n)
+     {
+     
+         if(n==0||n==1)
+             return 1;
+         
+             return ways(n-1) + ways(n-2);
+         }
+         
+         int main(){
+         int n;
+         printf("enter the steps:");
+         scanf("%d\n",&n);
+         
+         printf("total ways = %d", ways(n));
+         
+         //compare trhe employees name after converting to same case 
+         int result;
+         char name1[40]="VISHAL";
+         char name2[40]="VISHAL";
+         result=strcmp(name1,name2);
+        
+         
+         if(result==0){
+             printf("same employee");
+         }
+         else{
+             printf("diff employee");
+         }
+         
+         
+         //find square root using sqrt()
+         
+        int num;
+        printf("enter a number:");
+        scanf("%d",&num);
+        
+        printf("square root = %.2f",sqrt(num));*/
+        
+        //function to find the largest number
+        
+        int largest(int a, int b)
+        {
+            if(a>b){
+            return a;
+            }
+            else{
+            return b;
+            }
+        }
+        
+        int main(){
+           
+         printf("largest =%d",largest(10,5));
+            
+        
+    return 0;
+}
