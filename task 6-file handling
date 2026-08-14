@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    //store 5 student names in file
+   /*FILE *fp;
+   fp = fopen("student.txt","w");
+
+   fprintf(fp,"vishal\n");
+   fprintf(fp,"hari\n");
+   fprintf(fp,"kishor\n");
+   fprintf(fp,"partha\n");
+   fprintf(fp,"rohith\n");
+
+   fclose(fp);
+
+   printf("5 student name is written");*/
+
+
+
+// read the file using fgetc
+   /*FILE *fp;
+   char ch;
+   fp = fopen("student.txt","r");
+
+
+   while((ch = fgetc(fp))!=EOF)
+    {
+        printf("%c",ch);
+    }
+  fclose(fp);*/
+
+
+ 
+}
