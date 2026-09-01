@@ -1,0 +1,60 @@
+#include <xc.h>
+
+#define _XTAL_FREQ 20000000
+#pragma config FOSC = HS
+#pragma config WDTE = OFF
+#pragma config PWRTE = ON
+#pragma config BOREN = ON
+#pragma config LVP = OFF
+#pragma config CPD = OFF
+#pragma config WRT = OFF
+#pragma config CP = OFF
+
+
+void UART_Init(void)
+{
+    SPBRG = 129;
+    TXSTA = 0x24;
+    RCSTA = 0x90;
+    
+}
+void UART_Write(char data)
+{
+    while (TXIF == 0);
+    TXREG = data;
+    }
+
+char UART_Read(void)
+{
+    while (RCIF == 0);
+    return RCREG;
+}
+void main(void) {
+    
+    char data;
+    
+    UART_Init();
+    
+    UART_Write('H');
+    UART_Write('E');
+    UART_Write('L');
+    UART_Write('L');
+    UART_Write('O');
+    UART_Write('_');
+    UART_Write('V');
+    UART_Write('I');
+    UART_Write('S');
+    UART_Write('H');
+    UART_Write('A');
+    UART_Write('L');
+    
+    
+      while(1){
+      
+          data = UART_Read();
+          UART_Write(data);
+      }
+      
+    
+}
+
